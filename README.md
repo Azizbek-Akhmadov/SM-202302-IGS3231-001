@@ -2,9 +2,11 @@
 
 Week 3 
 ROS Installation
-locale # check for UTF 8
-sudo apt update && sudo apt install locales
-sudo locale gen en_US en_US.UTF 8
-sudo update locale LC_ALL=en_US.UTF 8 LANG=en_US.UTF 8
-export LANG=en_US.UTF 8
-locale # verify settings
+Set Locale
+Setup Sources: Output
+![image](https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/833052da-fdf5-4bee-99ce-91a1e8f1ceef)
+Setup Sources
+aptcache policy | grep universe
+
+sudo apt install software properties common
+sudo add apt repository universe
