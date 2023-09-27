@@ -10,3 +10,6 @@ ROS Installation
 
 *sudo apt install software properties common
 *sudo add apt repository universe
+
+![Endpoint Badge](https://img.shields.io/endpoint?label=Smart%20Mobility%20Engineering%20Lab%20%5B202302-IGS3231-001%5D)
+
