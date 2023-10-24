@@ -105,4 +105,14 @@ the turtlesim window
 
 ROS2 & RQT 
 
+<img width="628" alt="Screenshot 2023-10-24 at 11 00 56 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/1b591f4a-bb7c-4acd-bf07-a132b2ba0e21">
+
+Installation command:
+
+Make sure your system is up-to-date
+– sudo apt update
+Install the rqt library and its plugins – sudoaptinstall~nros-rolling-rqt*
+Using rqt
+– To run rqt by just typing rqt in the command line
+<img width="650" alt="Screenshot 2023-10-24 at 11 01 49 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/430916b0-ae45-4763-81ca-898332559ef2">
 
