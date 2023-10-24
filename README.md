@@ -1,4 +1,4 @@
-<img width="536" alt="Screenshot 2023-10-24 at 10 54 00 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/3bbdf6e0-5a7f-40b5-95a8-eb26f0d5511c"># SM-202302-IGS3231-001
+# SM-202302-IGS3231-001
 
 # Week 3 
 ROS Installation
