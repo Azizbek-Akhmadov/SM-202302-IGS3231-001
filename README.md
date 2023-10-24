@@ -1,4 +1,4 @@
-# SM-202302-IGS3231-001
+<img width="536" alt="Screenshot 2023-10-24 at 10 54 00 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/3bbdf6e0-5a7f-40b5-95a8-eb26f0d5511c"># SM-202302-IGS3231-001
 
 # Week 3 
 ROS Installation
@@ -59,3 +59,50 @@ sudo apt install ros-humble-ros-base
 * Testing ROS 2 Installation (C++ )
 
   source /opt/ros/humble/setup.bash ros2 run demo_nodes_py listener
+# Week 4 
+
+• Turtlesim
+• ROS2 & RQT
+• Understanding the basic concepts
+• Colcon
+• Creating a workspace
+• Creating a package
+• Activity session ( OS & ROS 2 Test)
+
+Turtlesim
+
+• • •
+System is up-to-date
+– sudo apt update
+Install the turtlesim library
+– sudo apt install ros-rolling-turtlesim
+Check that the package is installed:
+– ros2 pkg executables turtlesim
+
+<img width="546" alt="Screenshot 2023-10-24 at 10 54 13 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/d5209cd3-cf74-48d3-951e-3fd6c1abdf5c">
+
+ Command should return a list of turtlesim’s executables:
+turtlesim draw square
+turtlesim mimic
+turtlesim turtle_teleop_key
+turtlesim turtlesim node
+
+To Start Tyurlesim 
+
+ros2 run turtlesim turtlesim_node
+
+To control the turtle we need type the following command:
+
+– ros2 run turtlesim turtle_teleop_key
+
+At this point we should have three windows open:
+
+a terminal running turtlesim_ node
+a terminal running turtle_teleop_key
+the turtlesim window
+
+<img width="566" alt="Screenshot 2023-10-24 at 10 58 08 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/307a7968-cafe-45f8-8490-0246c39aad50">
+
+ROS2 & RQT 
+
+
