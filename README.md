@@ -113,6 +113,30 @@ Make sure your system is up-to-date
 – sudo apt update
 Install the rqt library and its plugins – sudoaptinstall~nros-rolling-rqt*
 Using rqt
+
 – To run rqt by just typing rqt in the command line
+
 <img width="650" alt="Screenshot 2023-10-24 at 11 01 49 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/430916b0-ae45-4763-81ca-898332559ef2">
+
+# Week 5
+
+Writing a simple publisher and subscriber
+Creating custom msg and srv files
+Implementing custom interfaces
+Using parameters in a class
+Using ros2doctor to identify issues
+Activity session
+
+
+
+Step 1: Create a package
+- ros2 pkg create --build-type ament_python py_pubsub
+Step 2: Write the publisher node
+- Download the example talker code by entering the following command
+• get https://raw.githubusercontent.com/ros2/examples/rolling/rclpy/topics/min
+imal publisher/examples rely minimal publisher/publisher member functio
+n.py
+Now there will be a new file named publisher member function.py adjace
+nt to init py
+
 
