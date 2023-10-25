@@ -139,4 +139,56 @@ n.py
 Now there will be a new file named publisher member function.py adjace
 nt to init py
 
+#Week 7 
+
+Managing Dependencies with rosdep
+
+<img width="375" alt="Screenshot 2023-10-25 at 11 04 31 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/b6acb11b-5005-405c-ac13-7c8505433280">
+
+sudo rosdep init
+rosdep update
+
+This will initialize rosdep and update will update the locally cached rosdistro index.
+
+rosdep install --from-paths src -y --ignore-src
+
+To create action:
+
+# Request
+- --
+# Result
+- --
+# Feedback
+
+Create an action directory in our ROS package action_tutorials_interfaces: Within
+the action directory, create a file called Fibonacci.action with the following contents:
+
+This is accomplished by adding the following lines to our CMakeLists. txt before the ament_package
+() line, in the action_tutorials_interfaces:
+
+find_package (rosidl_default_generators REQUIRED)
+rosid1_generate_interfaces(S{PROJECT_NAME}
+"action/Fibonacci.action"
+
+We should also add the required dependencies to our package.xml:
+
+<buildtool_depend›rosid1_default_generators</buildtool_depend>
+<depend›action_msgs</depend>
+<member_of_group›rosid1_interface_packages</member_of_group>
+
+We should now be able to build the package containing the Fibonacci action definition:
+
+# Change to the root of the workspace
+cd ~/ros2 ws
+# Build
+colcon build
+
+
+# Source our workspace
+# On Windows: call install/setup.bat
+.install/setup.bash
+# Check that our action definition exists
+ros2 interface show action_tutorials_interfaces/action/Fibonacci
+
+
 
