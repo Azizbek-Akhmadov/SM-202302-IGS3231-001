@@ -154,11 +154,11 @@ rosdep install --from-paths src -y --ignore-src
 
 To create action:
 
-# Request
+ Request
 - --
-# Result
+ Result
 - --
-# Feedback
+ Feedback
 
 Create an action directory in our ROS package action_tutorials_interfaces: Within
 the action directory, create a file called Fibonacci.action with the following contents:
@@ -178,16 +178,16 @@ We should also add the required dependencies to our package.xml:
 
 We should now be able to build the package containing the Fibonacci action definition:
 
-# Change to the root of the workspace
+ Change to the root of the workspace
 cd ~/ros2 ws
-# Build
+ Build
 colcon build
 
 
-# Source our workspace
-# On Windows: call install/setup.bat
+ Source our workspace
+ On Windows: call install/setup.bat
 .install/setup.bash
-# Check that our action definition exists
+ Check that our action definition exists
 ros2 interface show action_tutorials_interfaces/action/Fibonacci
 
 
