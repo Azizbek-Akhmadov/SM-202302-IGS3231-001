@@ -139,7 +139,16 @@ n.py
 Now there will be a new file named publisher member function.py adjace
 nt to init py
 
-#Week 7 
+# Week 6
+
+Managing Dependencies with rosdep
+Creating an action
+Writing an action server and client
+Composing multiple nodes in a single process
+Creating a launch file
+Integrating launch files into ROS 2 packages
+Using substitutions
+Using event handlers
 
 Managing Dependencies with rosdep
 
@@ -190,5 +199,60 @@ colcon build
  Check that our action definition exists
 ros2 interface show action_tutorials_interfaces/action/Fibonacci
 
+# Week 7 
+
+Enable ROS 2 Topic Statistics and view the output statistics data
+
+/parameter events
+/rosout
+/statistics
+/topic
+
+- If you optionally changed the topic_stats_options.publish_topic field earlier in the tu
+torial, then you will see that name instead of /statistics.
+The subscriber node you created is publishing statistics, for the topic topic, to the o
+utput topic /statistics.
+We can visualize this using RQt
+
+measurement_source_name: minimal_subscriber_with_topic_statistics
+metrics source: message age
+unit: ms
+window start:
+sec: 1594856666
+nanosec: 931527366
+window_stop:
+sec: 1594856676
+nanosec: 930797670
+statistics:
+- data_type: 1
+data: .nan
+-data_type: 3
+data:nan
+- data_type: 2
+data:.nan
+- data_type: 5
+data: 0.0
+-data_type: 4
+data: nan
+
+<img width="364" alt="Screenshot 2023-10-25 at 11 23 57 AM" src="https://github.com/Azizbek-Akhmadov/SM-202302-IGS3231-001/assets/81019633/6f5b6fb7-d871-4ee1-badc-42b5936dbc81">
+
+Allocator 
+
+template <class T>
+struct custom_allocator {
+using value_type = T;
+custom_allocator () noexcept;
+template <class U> custom_allocator (const custom_allocator<U>&) noexcept;
+T* allocate (std::size_t n);
+void deallocate (T* p, std::size_t n);
+};
+template <class T, class U>
+constexpr bool operator== (const custom_allocator<T›&, const custom_allocator<U>&) noexcept;
+template <class T, class U>
+constexpr bool operator!= (const custom_allocator<T>&, const custom_allocator<U>&) noexcept;
+
+![Uploading Screenshot 2023-10-25 at 11.24.58 AM.png…]()
+![Uploading Screenshot 2023-10-25 at 11.25.11 AM.png…]()
 
 
